@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.container {
+    min-height: 100%;
+    background-color: #111122;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    vertical-align: center;
+}
+
+.top-panel {
+    display: flex;
+    width: 90%;
+    height: 20%;
+    justify-content: space-around;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer {
+    font-size: 45px;
+    width: 25%;
+    font-family: "Consolas", sans-serif;
+}
+
+.lives {
+    width: 40%;
+}
+
+.dps {
+    font-size: 45px;
+    width: 25%;
+    font-family: "Consolas", sans-serif;
+}
+
+.live {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.active-live {
+    background-color: red;
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+
+.inactive-live {
+    background-color: #333344;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.digits-count {
+    height: 10%;
+    font-size: 40px;
+    color: lime;
+}
+
+.digits {
+    font-family: "Consolas", sans-serif;
+
+    margin-top: 10%;
+    margin-right: 30%;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+
+    font-size: 120px;
+
+    background: #121FCF;
+    background: linear-gradient(to right, #111122 0%, lime 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+    width: 80%;
+    height: 15%;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.version {
+    color: darkturquoise;
+}
+
+.set-numbers {
+    font-size: 30px;
+    color: gold;
+}
+
+.set-numbers button {
+    height: 35px;
+    width: 70px;
+    background-color: darkviolet;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 6px;
+    transition: 200ms;
+}
+
+.set-numbers input {
+    height: 25px;
+    width: 70px;
+    background-color: #444455;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.lost-screen {
+    animation: change-lost-bg 1100ms ease-out;
+}
+
+@keyframes change-lost-bg {
+    from {
+        background-color: red;
+    }
+    to {
+        background: #111122;
+    }
+}
+
+.won-screen {
+    animation: change-won-bg 1100ms ease-out;
+}
+
+@keyframes change-won-bg {
+    from {
+        background-color: greenyellow;
+    }
+    to {
+        background: #111122;
+    }
+}
+
+.start-screen {
+    animation: change-start-bg 500ms ease-out;
+}
+
+@keyframes change-start-bg {
+    from {
+        background-color: gold;
+    }
+    to {
+        background: #111122;
+    }
+}
+
+#set-button:hover {
+    box-shadow: 0 0 10px blueviolet, 0 0 40px blueviolet, 0 0 80px blueviolet;
+    background-color: blueviolet;
+    /*transition: 200s;*/
+}
+
+#best {
+    font-size: 20px;
+    color: lightyellow;
+}

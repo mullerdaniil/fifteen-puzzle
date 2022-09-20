@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pi trainer</title>
+  <link rel="stylesheet" href="css/pi-trainer.css">
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/pi-trainer.js"></script>
+</head>
+<body>
+<audio
+        id="winSound"
+        src="https://docs.google.com/uc?export=download&id=1gnsx6MgsrJDdmB7op8dCpFpatG36edKj">
+</audio>
+
+<audio
+        id="banSound"
+        src="https://docs.google.com/uc?export=download&id=1DcY8Hvko7EYh97OWRIdg3Lp7Eve7-wGN">
+</audio>
+
+<audio
+        id="lostSound"
+        src="https://docs.google.com/uc?export=download&id=1mDdpuoU9FXpE6HiJGRG1QQNsGzbZbtcP">
+</audio>
+
+<div id="container" class="container">
+  <div class="top-panel">
+    <div id="timer" class="timer centered">
+      ...
+    </div>
+    <div id="lives" class="lives centered">
+      <div id="live0" class="live active-live"></div>
+      <div id="live1" class="live active-live"></div>
+      <div id="live2" class="live active-live"></div>
+      <div id="live3" class="live active-live"></div>
+      <div id="live4" class="live active-live"></div>
+    </div>
+    <div id="dps" class="dps centered">
+      ...
+    </div>
+  </div>
+  <div id="current-count" class="digits-count">
+    0
+  </div>
+  <div id="digits" class="digits">
+
+  </div>
+  <div class="footer">
+    <div class="set-numbers">
+      <button id="set-button" onclick="setCount();">set</button>
+      <input id="start-digit-field" type="text">
+      <input id="digits-count-field" type="text">
+    </div>
+    <div class="version">
+      v0.83
+    </div>
+    <div id="best">
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
