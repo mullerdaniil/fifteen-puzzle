@@ -1,0 +1,298 @@
+:root {
+    --body-color: black;
+    --body-background-color: cornsilk;
+
+    --piece-background-color: coral;
+    --piece-text-color: #f1f1f1;
+
+    --toppanelelement-background-color: darkorange;
+    --toppanelelement-text-color: darkred;
+    --toppanelelement-border: 1px solid sienna;
+    --toppanelsizeelement-background-color: lightcoral;
+
+    --bottompanelvalue-background-color: #c8ffae;
+
+    --blurredblock-color: rgba(240, 128, 128, 0.5);
+}
+
+.body {
+    color: var(--body-color);
+    background-color: var(--body-background-color);
+}
+
+.topPanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70vmin;
+    height: 10vmin;
+
+    position: absolute;
+    top: calc(50% - 42vmin);
+    left: 50%;
+
+    margin: -5vmin 0 0 -35vmin;
+}
+
+.topPanelElement {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 60%;
+    width: 100%;
+    background-color: var(--toppanelelement-background-color);
+    color: var(--toppanelelement-text-color);
+    border: var(--toppanelelement-border);
+    text-align: center;
+    border-radius: 10%;
+
+    font-size: 150%;
+}
+
+.topPanelElement2 {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 60%;
+    width: 20%;
+    background-color: var(--toppanelelement-background-color);
+    color: var(--toppanelelement-text-color);
+    border: var(--toppanelelement-border);
+    text-align: center;
+    border-radius: 10%;
+
+    font-size: 150%;
+}
+
+.topPanelElement3 {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 6vmin;
+    width: 18vmin;
+    background-color: var(--toppanelelement-background-color);
+    color: var(--toppanelelement-text-color);
+    border: var(--toppanelelement-border);
+    text-align: center;
+    border-radius: 10%;
+
+    font-size: 2.2vmin;
+}
+
+
+
+
+
+.topPanelButton:hover {
+    background-color: darkcyan;
+}
+
+
+.bottomPanel {
+    /*background-color: springgreen;*/
+    /*border: darkred 5px dashed;*/
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70vmin;
+    height: 10vmin;
+
+    position: absolute;
+    top: calc(50% + 42vmin);
+    left: 50%;
+
+    margin: -5vmin 0 0 -35vmin;
+}
+
+
+
+.mpsBlock {
+    height: 100%;
+    width: 20%;
+}
+
+.timer {
+    height: 100%;
+    width: 20%;
+}
+
+.movesCounter {
+    height: 100%;
+    width: 20%;
+}
+
+.textLabel {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.valueLabel {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 60%;
+    width: 100%;
+    background-color: var(--bottompanelvalue-background-color);
+    color: var(--toppanelelement-text-color);
+    border: var(--toppanelelement-border);
+    text-align: center;
+    border-radius: 10%;
+
+    font-size: 150%;
+}
+
+.gameBoard {
+    width: 70vmin;
+    height: 70vmin;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin: -35vmin 0 0 -35vmin;
+}
+
+.piece {
+    position: absolute;
+    top: -100vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20%;
+    background-color: var(--piece-background-color);
+    height: 16%;
+    width: 16%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vmin;
+    color: var(--piece-text-color);
+
+    -webkit-transition: 0.08s left, 0.08s top;
+    transition: 0.08s left, 0.08s top;
+}
+
+.sizeSetterPanel {
+    width: 20%;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50% 50%;
+
+}
+
+.sizeSetterPanelElement {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--toppanelelement-background-color);
+    color: var(--toppanelelement-text-color);
+    border: var(--toppanelelement-border);
+    text-align: center;
+    border-radius: 10%;
+}
+
+.sizeSetterPanelPlus {
+
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.sizeSetterPanelMinus {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.sizeSetterPanelSizeValue {
+    background-color: var(--toppanelsizeelement-background-color);
+
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.popUpWindow {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+
+
+
+    width: 70vmin;
+    height: 70vmin;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin: -35vmin 0 0 -35vmin;
+
+    background-color: var(--toppanelsizeelement-background-color);
+    border-radius: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.popUpWindowElement {
+    text-align: center;
+
+    line-height: 5vmin;
+
+    width: 80%;
+    height: 15%;
+
+    margin: 5%;
+
+    text-transform: uppercase;
+}
+
+.keySpan {
+    padding: 0 10px;
+    background-color: var(--bottompanelvalue-background-color) !important;
+
+}
+
+.closeButton {
+    width: 10%;
+    height: 7%;
+}
+
+.blurredBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blurredblock-color);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+
+}
